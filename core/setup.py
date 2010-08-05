@@ -15,9 +15,9 @@ extensions.append(Extension("utils.bitset", ["utils/bitset.pyx", "utils/binBits.
 extensions.append(Extension("simplejson._speedups", ["simplejson/_speedups.c"]))
 
 def main():
-	setup(name="trait",
-		ext_modules=extensions,
-		cmdclass={'build_ext': build_ext})
+    setup(name="trait",
+        ext_modules=extensions,
+        cmdclass={'build_ext': build_ext})
       
 if __name__ == "__main__":
-	main()
+    main()
